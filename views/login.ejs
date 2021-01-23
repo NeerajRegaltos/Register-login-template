@@ -1,0 +1,26 @@
+<%- include("./layouts/logHeader.ejs") %>
+
+
+
+    <form method="POST">
+
+
+        <input type="email" placeholder="email" name="email" required class="input" style="text-transform: lowercase;"
+            value="<%= locals.email %>">
+
+        <input type="password" placeholder="Password" class="input" name="password" required>
+
+        <input type="submit" value="Log In" class="btn btn-primary input-button">
+
+
+    </form>
+
+    <p class="or">or</p>
+
+
+    <a href="/register" style="text-decoration: none; "><button type="button" class="btn btn-success button">Create
+            New Account</button> </a>
+
+
+
+    <%- include("./layouts/logFooter.ejs") %>
